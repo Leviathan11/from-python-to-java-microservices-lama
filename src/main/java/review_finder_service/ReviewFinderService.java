@@ -17,6 +17,10 @@ public class ReviewFinderService {
 
     private ReviewAPIController controller;
 
+    /**
+     * The main method of the microservice, this is meant to run
+     * @param args port number
+     */
     public static void main(String[] args) {
         logger.debug("Starting " + ReviewFinderService.class.getName() + "...");
 
@@ -45,7 +49,7 @@ public class ReviewFinderService {
 
     /**
      * Setting up port
-     * @param args - app args
+     * @param args port number
      */
     private static void setup(String[] args){
         if(args == null || args.length == 0){

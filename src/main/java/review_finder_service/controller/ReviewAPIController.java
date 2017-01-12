@@ -19,9 +19,9 @@ public class ReviewAPIController {
         this.apiService = apiService;
     }
 
-    /*
-    Uses the APIService's findReview and converts it to a JSON
-    It returns this JSON as a String
+    /**
+    * Uses the APIService's findReview and converts it to a JSON
+    * @return Json with 5 title-URL pairs.
      */
     public String getReviews(Request req, Response res){
         try {

@@ -30,9 +30,16 @@ public class APIService {
     }
 
     /*
-    Uses the Jsoup library to parse the html
-    Returns a String[5][2] Array containing the top 5 search results as
-    DESCRIPTION - URL
+
+     */
+    /**
+     * Uses the Jsoup library to parse the html
+     * Returns a String[5][2] Array containing the top 5 search results as<br>
+     * returned[x][0]: title of the search result<br>
+     * returned[x][1]: URL of the search result<br>
+     * (where x in range(0, 5))
+     * @param title the name of the product to search reviews for
+     * @return      5x2 String array containing the titles and URLs
      */
     public String[][] findReviews(String title) throws IOException {
         logger.info("Building URL, trying to connect.");
